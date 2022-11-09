@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #fff159;
+  height: 68px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+}
+.search-input {
+  width: 375px;
+  height: 44px;
+  margin-right: 14px;
+}
+.button {
+  width: 121px;
+  height: 44px;
+}
+
+.content {
+  width: 510px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-item {
+  display: flex;
+  width: 590px;
+  height: 230px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.result-content {
+  width: 200px;
+}
+.result-price {
+  font-size: 28px;
+  margin-left: 120px;
+}
