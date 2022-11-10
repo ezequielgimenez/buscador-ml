@@ -35,6 +35,11 @@ function showResult(results) {
   }
 }
 
+function showTotalResults(totalResults) {
+  const total = document.querySelector(".result-count");
+  total.textContent = totalResults.paging.total;
+}
+
 function main() {
   const formEl = document.querySelector(".search-form");
   formEl.addEventListener("submit", (evento) => {
@@ -43,6 +48,7 @@ function main() {
     fetch("https://api.mercadolibre.com/sites/MLA/search?q=" + palabraABuscar)
       .then((respuesta) => respuesta.json())
       .then((data) => {
+        showTotalResults(data);
         showResult(data.results);
         evento.target.buscar.value = "";
       });
