@@ -50,25 +50,3 @@ function main() {
 }
 
 main();
-
-// const contenedor = document.querySelector(".results");
-// // seleciona el contenedor de las cards
-
-// const template = document.querySelector("#template-card-result");
-// //selecciona el template mediante su id (tambien puede ser con class)
-
-// for (const item of results) {
-//   // forOf itera por cada item en el array "results", y cada item es nombrado en este caso como "item"
-
-//   const priceEl = template.content.querySelector(".result-price");
-//   priceEl.textContent = "$" + item.price;
-//   // selecciona todos los elementos del template, para remplazarlos con el valor del nuevo item
-
-//   const thumbnailEl = template.content.querySelector(".result-img");
-//   thumbnailEl.setAttribute("src", item.thumbnail);
-//   //asi con todos los elementos que tenga la card del template, title, price...
-
-//   const clone = document.importNode(template.content, true);
-//   contenedor.appendChild(clone);
-//   // esto es necesario para que agrege cada item/card al contenedor (appendChild == "agregar hijo")
-// }
